@@ -1,8 +1,7 @@
 import { useGlobalStore } from "../../../../Store/global.store";
 
 const Todos = () => {
-  const { todos, toggleTodo, removeTodo } = useGlobalStore((s) => s);
-
+  const { todos, toggleTodo, removeTodo } = useGlobalStore();
   return (
     <div data-type="todos">
       {todos.map(({ id, text, isCompleted }) => {

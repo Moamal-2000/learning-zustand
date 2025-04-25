@@ -3,7 +3,7 @@ import { useGlobalStore } from "../../../../Store/global.store";
 
 const TodoInput = () => {
   const [todoText, setTodoText] = useState("");
-  const { addTodo } = useGlobalStore((s) => s);
+  const { addTodo } = useGlobalStore();
 
   function handleAddTodo(e) {
     e.preventDefault();
